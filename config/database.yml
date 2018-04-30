@@ -1,20 +1,18 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  pool: 5
-  username: <%= ENV['DATABASE_USERNAME'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  host: <%= ENV['DATABASE_HOSTNAME'] %>
-  database: <%= ENV['DATABASE_DBNAME'] %>
+  pool: <%= Settings.database.pool %>
+  username: <%= Settings.database.username %>
+  password: <%= Settings.database.password %>
+  host: <%= Settings.database.host %>
+  database: <%= Settings.database.database %>
 
 development:
   <<: *default
-  database: todo-adminlte
 
 test:
   <<: *default
-  database: db/test.sqlite3
 
 production:
   <<: *default
-  database: db/production.sqlite3
+

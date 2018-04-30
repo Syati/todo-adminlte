@@ -1,0 +1,10 @@
+secrets:
+  secret_key_base: "secret"
+
+database:
+  pool: 2
+  host: endpoint
+  port: 3306
+  username: username
+  password: password
+  database: todo-adminlte

@@ -1,3 +1,11 @@
+### custom
+
+### idea
+.idea/.rakeTasks
+.idea/.generators
+
+
+
 ### https://raw.github.com/github/gitignore/4b37ac26ffaee3e6566723ea187202d1e44ebb52/Ruby.gitignore
 
 *.gem
@@ -282,7 +290,7 @@ flycheck_*.el
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -309,3 +317,7 @@ Temporary Items
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

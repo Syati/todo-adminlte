@@ -1,0 +1,10 @@
+secrets:
+  secret_key_base: secret_key
+
+database:
+  pool: 2
+  host: localhost
+  port: 3306
+  username: root
+  password:
+  database: todo-adminlte_dev
