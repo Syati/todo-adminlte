@@ -7,5 +7,9 @@ html
     = csp_meta_tag
     = javascript_pack_tag 'application'
     = stylesheet_pack_tag 'application'
-  body
-    = yield
+  body.hold-transition.sidebar-mini.skin-blue.fixed
+    .wrapper
+      = render 'layouts/header'
+      = render 'layouts/sidebar'
+      .content-wrapper#app
+        = yield
