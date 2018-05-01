@@ -3,7 +3,7 @@
 ### idea
 .idea/.rakeTasks
 .idea/.generators
-
+.idea/*.cache
 
 
 ### https://raw.github.com/github/gitignore/4b37ac26ffaee3e6566723ea187202d1e44ebb52/Ruby.gitignore
