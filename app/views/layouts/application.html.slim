@@ -11,6 +11,10 @@ html
     .wrapper
       = render 'layouts/header'
       = render 'layouts/sidebar'
-      .content-wrapper#app
-        = yield
+      .content-wrapper
+        .content-header
+          h1
+            = yield(:content_title)
+        .content
+          = yield
       = render 'layouts/footer'

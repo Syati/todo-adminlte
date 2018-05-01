@@ -1,2 +1,18 @@
-p
-  | todos
+- content_for :content_title,  "Todos"
+.box
+  .box-body
+    table.table.table-bordered
+      thead
+        tr
+          th #
+          th = Todo.human_attribute_name(:title)
+          th = Todo.human_attribute_name(:desc)
+      tbody
+      - @todos.each_with_index do |todo, index|
+        tr
+          td = index
+          td = todo.title
+          td = todo.desc
+
+
+
