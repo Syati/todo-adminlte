@@ -652,6 +652,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="seedbank (vbundled(0.4.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/seedbank-0.4.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/seedbank-0.4.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="selenium-webdriver (vbundled(3.11.0)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/selenium-webdriver-3.11.0/lib" />
