@@ -5,7 +5,7 @@ aside.main-sidebar
         = link_to '#' do
           i.fa.fa-users
           span USERS
-      li
+      li class="#{active_class(todos_path)}"
         = link_to todos_path do
           i.fa.fa-check-square-o
           span TODOS
