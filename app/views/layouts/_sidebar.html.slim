@@ -1,6 +1,6 @@
 aside.main-sidebar
   section.sidebar
-    ul.nav.sidebar-menu
+    ul.nav.sidebar-menu data-widget='tree'
       li
         = link_to '#' do
           i.fa.fa-users
@@ -9,3 +9,21 @@ aside.main-sidebar
         = link_to '#' do
           i.fa.fa-check-square-o
           span TODOS
+      li.treeview
+        = link_to '#' do
+          i.fa.fa-object-group
+          span TREE VIEWS
+          i.fa.fa-angle-left.pull-right
+        ul.treeview-menu
+          li
+            = link_to '#' do
+              i.fa.fa-circle
+              span menu 1
+          li
+            = link_to '#' do
+              i.fa.fa-circle
+              span menu 2
+          li
+            = link_to '#' do
+              i.fa.fa-circle
+              span menu 3
