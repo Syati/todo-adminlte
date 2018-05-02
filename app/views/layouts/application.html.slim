@@ -14,7 +14,8 @@ html
       .content-wrapper
         .content-header
           h1
-            = yield(:content_title)
+            = yield :content_title
         .content
           = yield
       = render 'layouts/footer'
+      = yield :javascript_page
