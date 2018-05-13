@@ -1,20 +1,26 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# base
 ruby '2.5.0'
-
 gem 'rails', '~> 5.2.0'
+
+# settings
 gem 'config'
 
-gem 'mysql2', '>= 0.3.18', '< 0.5'
-
-gem 'webpacker', '~> 3.4'
-
+# server
 gem 'puma', '~> 3.11'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'slim-rails'
+# js
+gem 'webpacker', '~> 3.4'
 
+# view
+gem 'slim-rails'
+gem 'simple_form'
+
+# db
 gem 'seedbank'
 
 group :development, :test do
