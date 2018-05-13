@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # base
 ruby '2.5.0'
 gem 'rails', '~> 5.2.0'
+gem 'devise'
 
 # settings
 gem 'config'
@@ -20,7 +21,6 @@ gem 'webpacker', '~> 3.4'
 gem 'slim-rails'
 gem 'simple_form'
 gem 'gretel'
-
 
 # db
 gem 'seedbank'
