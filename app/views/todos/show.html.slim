@@ -1,0 +1,22 @@
+- content_for :content_title,  "Detail"
+.box
+  .box-header
+    h3.box-title = "\##{@todo.id}-#{@todo.title}"
+  .box-body
+    .row.col-md-12
+      .box-controls
+        = link_to 'edit', edit_todo_path(@todo)
+      table.table.table-bordered
+        tr
+          th = Todo.human_attribute_name(:title)
+          td = @todo.title
+        tr
+          th = Todo.human_attribute_name(:desc)
+          td = @todo.desc
+
+
+
+
+
+
+

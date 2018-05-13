@@ -4,14 +4,14 @@
     table.table.table-bordered
       thead
         tr
-          th #
+          th = Todo.human_attribute_name(:id)
           th = Todo.human_attribute_name(:title)
           th = Todo.human_attribute_name(:desc)
           th link
       tbody
       - @todos.each_with_index do |todo, index|
         tr
-          td = index
+          td = link_to todo.id, todo_path(todo)
           td = todo.title
           td = todo.desc
           td = link_to 'edit', edit_todo_path(todo)
