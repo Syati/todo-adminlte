@@ -1,6 +1,15 @@
 - content_for :content_title,  "Edit"
 - content_for :javascript_page do
   = javascript_pack_tag 'todos/edit'
-.box#vue-edit
+.box#vue-time
+  current-time
+.box
+  .box-header
+  .box-body
+    .row.col-md-12
+      = simple_form_for @todo do |f|
+        = f.input :title
+        = f.input :desc
+        = f.button :button, :submit, class: 'btn-primary'
 
 

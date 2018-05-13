@@ -1,13 +1,13 @@
 import Vue from '@root/basevue'
-import Hello from '@components/Hello'
+import CurrentTime from '@components/CurrentTime'
 
 document.addEventListener('turbolinks:load', () => {
-  let element = document.getElementById('vue-edit')
+  let element = document.getElementById('vue-time')
   if(element == null) return
   new Vue({
     el: element,
     components: {
-      'Hello': Hello
+      'CurrentTime': CurrentTime
     }
   })
 })
