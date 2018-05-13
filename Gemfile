@@ -19,6 +19,8 @@ gem 'webpacker', '~> 3.4'
 # view
 gem 'slim-rails'
 gem 'simple_form'
+gem 'gretel'
+
 
 # db
 gem 'seedbank'
