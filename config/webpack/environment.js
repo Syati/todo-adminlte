@@ -5,6 +5,7 @@ const webpack = require('webpack')
 
 environment.config.resolve.alias = {
   '@root': path.resolve(__dirname, '..', '..', 'app/javascript/packs'),
+  '@lib': path.resolve(__dirname, '..', '..', 'app/javascript/packs/lib'),
   '@components': path.resolve(__dirname, '..', '..', 'app/javascript/packs/components')
 }
 
