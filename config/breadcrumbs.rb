@@ -2,9 +2,19 @@ crumb :root do
   link "Home", root_path
 end
 
-# crumb :projects do
-#   link "Projects", projects_path
-# end
+crumb :todos do
+  link "Todos", todos_path
+end
+
+crumb :todo do |todo|
+  link "Detail", todo_path(todo)
+  parent :todos
+end
+
+crumb :edit_todo do |todo|
+  link "Edit", edit_todo_path(todo)
+  parent :todo, todo
+end
 
 # crumb :project do |project|
 #   link project.name, project_path(project)

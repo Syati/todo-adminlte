@@ -15,6 +15,7 @@ html
         .content-header
           h1
             = yield :content_title
+          == breadcrumbs style: :ol, class: 'breadcrumb', current_class: 'active'
         .content
           = render 'layouts/flash_message'
           = yield
