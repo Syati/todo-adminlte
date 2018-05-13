@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title
+      | TodoAdminlte
+    = csrf_meta_tags
+    = csp_meta_tag
+    = javascript_pack_tag 'application'
+    = stylesheet_pack_tag 'application'
+  body.skin-blue.layout-top-nav
+    .wrapper
+      .header.main-header
+        .navbar.navbar-static-top
+          .container
+            .navbar-header
+              a.navbar-brand href="#{root_url}"
+                | TodoAdminLTE
+      .content-wrapper
+        .container
+          .content-header
+          .content
+            = render 'layouts/flash_message'
+            = yield
