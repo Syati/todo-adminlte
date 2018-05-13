@@ -202,3 +202,7 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+  flashes:
+    created: 作成しました
+    updated: 更新しました
+    deleted: 削除しました

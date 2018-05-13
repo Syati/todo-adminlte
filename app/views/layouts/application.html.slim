@@ -17,5 +17,6 @@ html
           h1
             = yield :content_title
         .content
+          = render 'layouts/flash_message'
           = yield
       = render 'layouts/footer'
