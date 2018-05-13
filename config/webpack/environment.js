@@ -1,6 +1,12 @@
 const { environment } = require('@rails/webpacker')
 const vue =  require('./loaders/vue')
+const path = require('path')
 const webpack = require('webpack')
+
+environment.config.resolve.alias = {
+  '@root': path.resolve(__dirname, '..', '..', 'app/javascript/packs'),
+  '@components': path.resolve(__dirname, '..', '..', 'app/javascript/packs/components')
+}
 
 // Add an additional plugin of your choosing : ProvidePlugin
 environment.plugins.prepend(
